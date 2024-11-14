@@ -1,0 +1,43 @@
+<!-- views/contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About Us</a>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    </nav>
+    <main>
+        <h1>Contact Us</h1>
+        <p>If you have any questions or feedback, feel free to reach out to us using the form below. We would love to hear from you!</p>
+
+        <form action="/contact" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p>If you'd prefer, you can also contact us at: <a href="mailto:contact@myapp.com">contact@rohandev.com</a></p>
+    </main>
+</body>
+
+</html>
